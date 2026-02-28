@@ -1,10 +1,16 @@
-# ticktick-llm-connector
+# ChronoLobster（龙虾时序）
 
-一个面向大模型工作流的滴答清单（TickTick/Dida）CLI 连接器，重点解决：
+`ticktick-llm-connector` 是一个面向大模型工作流的滴答清单（TickTick/Dida）CLI 连接器，重点解决：
 
 - 直接读取滴答 API（不依赖 Obsidian 解析层）
 - 微信采集任务碎片化（例如“待投递 + 链接”被拆成两个任务）
 - 任务自动二分类：`待行动` / `材料`
+
+## 项目备注
+
+- 项目愿景：把“微信 -> 滴答 -> 大模型”打通成一个可迭代的时间管理基础设施。
+- 当前定位：先解决滴答在微信采集下的碎片化输入问题，再叠加自动化与 AI 决策层。
+- 适用人群：重度微信用户、滴答清单用户、想把任务系统接入 AI 的开发者与效率爱好者。
 
 ## 功能
 
@@ -89,13 +95,13 @@ node ./bin/tt-llm.mjs wechat --window-seconds 240 --apply --format md
 
 ## 发布前完善清单
 
-- [x] 默认 dry-run，`--apply` 才会修改线上任务  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a281c09aecc56fbabf97e2) #ticktick  %%[ticktick_id:: 69a281c09aecc56fbabf97e2]%%
-- [x] 命令行参数校验  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a281c49aecc56fbabf97e4) #ticktick  %%[ticktick_id:: 69a281c49aecc56fbabf97e4]%%
-- [x] 基础 smoke test  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a281c59aecc56fbabf97e6) #ticktick  %%[ticktick_id:: 69a281c59aecc56fbabf97e6]%%
-- [x] CI（GitHub Actions）  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a281c69aecc56fbabf97e8) #ticktick  %%[ticktick_id:: 69a281c69aecc56fbabf97e8]%%
-- [x] 文档与许可证  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a281c89aecc56fbabf97ea) #ticktick  %%[ticktick_id:: 69a281c89aecc56fbabf97ea]%%
-- [ ] 你自己的真实场景回归样本（建议 >= 20 条微信采集任务）  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a281c99aecc56fbabf97ec) #ticktick  %%[ticktick_id:: 69a281c99aecc56fbabf97ec]%%
-- [ ] 误合并容忍度评估（建议先连续 3 天只跑 dry-run）  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a281ca9aecc56fbabf97ee) #ticktick  %%[ticktick_id:: 69a281ca9aecc56fbabf97ee]%%
+- [x] 默认 dry-run，`--apply` 才会修改线上任务  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a2859f9aecc56fbabf97f0) #ticktick  %%[ticktick_id:: 69a2859f9aecc56fbabf97f0]%%
+- [x] 命令行参数校验  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a285a59aecc56fbabf97f2) #ticktick  %%[ticktick_id:: 69a285a59aecc56fbabf97f2]%%
+- [x] 基础 smoke test  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a285a79aecc56fbabf97f4) #ticktick  %%[ticktick_id:: 69a285a79aecc56fbabf97f4]%%
+- [x] CI（GitHub Actions）  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a285a99aecc56fbabf97f6) #ticktick  %%[ticktick_id:: 69a285a99aecc56fbabf97f6]%%
+- [x] 文档与许可证  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a285aa9aecc56fbabf97f8) #ticktick  %%[ticktick_id:: 69a285aa9aecc56fbabf97f8]%%
+- [ ] 真实场景回归样本（建议 >= 20 条微信采集任务）  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a285ac9aecc56fbabf97fa) #ticktick  %%[ticktick_id:: 69a285ac9aecc56fbabf97fa]%%
+- [ ] 误合并容忍度评估（建议先连续 3 天只跑 dry-run）  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a285ac9aecc56fbabf97fc) #ticktick  %%[ticktick_id:: 69a285ac9aecc56fbabf97fc]%%
 
 ## 上传 GitHub
 
