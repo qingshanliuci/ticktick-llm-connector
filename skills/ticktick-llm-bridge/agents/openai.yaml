@@ -1,0 +1,4 @@
+interface:
+  display_name: "TickTick LLM Bridge"
+  short_description: "Bridge TickTick data into LLM workflows with direct API reads"
+  default_prompt: "Use tt-llm digest outputs as structured context for AI summaries and decisions."

@@ -13,6 +13,17 @@
 - `wechat`：微信采集任务整理（标记+链接合并 + 分类打标）
 - `cache-digest`：基于 TickTickSync 缓存文件做离线摘要（不访问网络）
 
+## Skills 封装
+
+仓库已内置两个可复用 Skill：
+
+- `skills/lobster-time-management`
+  - 面向“龙虾时间管理”场景，重点是微信采集清洗、任务合并与行动化。
+- `skills/ticktick-llm-bridge`
+  - 面向“大模型对接”场景，重点是把 TickTick JSON 结构化地喂给 AI 流程。
+
+如果你使用 Codex Skills 机制，可以直接从该仓库路径安装对应目录。
+
 ## 安装
 
 ```bash
@@ -78,13 +89,13 @@ node ./bin/tt-llm.mjs wechat --window-seconds 240 --apply --format md
 
 ## 发布前完善清单
 
-- [x] 默认 dry-run，`--apply` 才会修改线上任务
-- [x] 命令行参数校验
-- [x] 基础 smoke test
-- [x] CI（GitHub Actions）
-- [x] 文档与许可证
-- [ ] 你自己的真实场景回归样本（建议 >= 20 条微信采集任务）
-- [ ] 误合并容忍度评估（建议先连续 3 天只跑 dry-run）
+- [x] 默认 dry-run，`--apply` 才会修改线上任务  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a281c09aecc56fbabf97e2) #ticktick  %%[ticktick_id:: 69a281c09aecc56fbabf97e2]%%
+- [x] 命令行参数校验  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a281c49aecc56fbabf97e4) #ticktick  %%[ticktick_id:: 69a281c49aecc56fbabf97e4]%%
+- [x] 基础 smoke test  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a281c59aecc56fbabf97e6) #ticktick  %%[ticktick_id:: 69a281c59aecc56fbabf97e6]%%
+- [x] CI（GitHub Actions）  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a281c69aecc56fbabf97e8) #ticktick  %%[ticktick_id:: 69a281c69aecc56fbabf97e8]%%
+- [x] 文档与许可证  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a281c89aecc56fbabf97ea) #ticktick  %%[ticktick_id:: 69a281c89aecc56fbabf97ea]%%
+- [ ] 你自己的真实场景回归样本（建议 >= 20 条微信采集任务）  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a281c99aecc56fbabf97ec) #ticktick  %%[ticktick_id:: 69a281c99aecc56fbabf97ec]%%
+- [ ] 误合并容忍度评估（建议先连续 3 天只跑 dry-run）  [link](https://dida365.com/webapp/#p/inbox1017279818/tasks/69a281ca9aecc56fbabf97ee) #ticktick  %%[ticktick_id:: 69a281ca9aecc56fbabf97ee]%%
 
 ## 上传 GitHub
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lobster Time"
+  short_description: "Organize WeChat-captured TickTick tasks into actionable plans"
+  default_prompt: "Use tt-llm wechat digest and dedupe flows to organize and clean tasks safely."
